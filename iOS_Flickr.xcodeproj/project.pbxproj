@@ -12,7 +12,6 @@
 		043A296023A37F58003791F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043A295E23A37F58003791F8 /* Main.storyboard */; };
 		043A296223A37F5C003791F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043A296123A37F5C003791F8 /* Assets.xcassets */; };
 		043A296523A37F5C003791F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043A296323A37F5C003791F8 /* LaunchScreen.storyboard */; };
-		04DD19B323A380F600A71641 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD19B223A380F600A71641 /* TabViewController.swift */; };
 		04DD19B623A3836000A71641 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD19B523A3836000A71641 /* URL+Extension.swift */; };
 		04DD19B823A384A600A71641 /* BrandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD19B723A384A600A71641 /* BrandModel.swift */; };
 		04DD19BA23A3B15400A71641 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD19B923A3B15400A71641 /* NetworkManager.swift */; };
@@ -32,7 +31,6 @@
 		043A296123A37F5C003791F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043A296423A37F5C003791F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043A296623A37F5C003791F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04DD19B223A380F600A71641 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		04DD19B523A3836000A71641 /* URL+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		04DD19B723A384A600A71641 /* BrandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandModel.swift; sourceTree = "<group>"; };
 		04DD19B923A3B15400A71641 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 		043A297023A37FCA003791F8 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				04DD19B223A380F600A71641 /* TabViewController.swift */,
 				04DD19BB23A3BA8F00A71641 /* TableViewController.swift */,
 			);
 			path = "View Controllers";
@@ -298,7 +295,6 @@
 			files = (
 				04DD19BA23A3B15400A71641 /* NetworkManager.swift in Sources */,
 				04DD19BC23A3BA8F00A71641 /* TableViewController.swift in Sources */,
-				04DD19B323A380F600A71641 /* TabViewController.swift in Sources */,
 				04DD19B623A3836000A71641 /* URL+Extension.swift in Sources */,
 				04DD19B823A384A600A71641 /* BrandModel.swift in Sources */,
 				04DD19C323A4E56000A71641 /* LargeTableViewCell.swift in Sources */,

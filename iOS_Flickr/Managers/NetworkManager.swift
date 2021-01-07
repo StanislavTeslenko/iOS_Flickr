@@ -9,8 +9,6 @@
 import Foundation
 import Alamofire
 
-//https://www.flickr.com/services/rest/?method=flickr.cameras.getBrandModels&api_key=91d7d815196033ab702f81c91a56aa5d&brand=sony&format=json&nojsoncallback=1
-
 private let baseUrl = "https://www.flickr.com/services/rest/"
 
 class NetworkManager {
@@ -26,13 +24,13 @@ class NetworkManager {
         ]
         
         guard let url = URL(string: baseUrl)?.withQueries(parameters) else {
-                        print (#line, #function, "Error creating URL from \(baseUrl) with \(parameters)")
-                        return}
+            print (#line, #function, "Error creating URL from \(baseUrl) with \(parameters)")
+            return}
         
         AF.request(url).validate().responseJSON { (response) in
             
             switch response.result {
-                
+            
             case .failure(let error):
                 print(#line, #function, error)
                 
@@ -44,19 +42,7 @@ class NetworkManager {
                 }
                 
                 completion (cameras)
-                
             }
-            
-            
         }
-        
-        
-        
-        
     }
-    
-    
-    
-    
-    
 }

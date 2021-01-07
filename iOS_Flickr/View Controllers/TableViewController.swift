@@ -38,28 +38,19 @@ class TableViewController: UITableViewController {
             self.cameras = cameras?.cameras?.camera ?? []
             self.tableView.reloadData()
         }
-        
-        
     }
     
     
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return cameras.count
     }
-    
-    //    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    //        return 90
-    //    }
-    
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let camera = cameras[indexPath.row]
@@ -104,12 +95,7 @@ class TableViewController: UITableViewController {
             return cell
             
         }
-        
     }
-    
-    
-    
-    
 }
 
 extension TableViewController: UISearchBarDelegate {
@@ -118,8 +104,5 @@ extension TableViewController: UISearchBarDelegate {
         
         sendRequest(for: searchBar.text!)
         searchBar.resignFirstResponder()
-        
     }
-    
-    
 }
