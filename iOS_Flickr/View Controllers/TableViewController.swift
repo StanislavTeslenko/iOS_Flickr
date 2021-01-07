@@ -96,6 +96,11 @@ class TableViewController: UITableViewController {
             
         }
     }
+    
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        tableView.deselectRow(at: indexPath, animated: false)
+        return nil
+    }
 }
 
 extension TableViewController: UISearchBarDelegate {
